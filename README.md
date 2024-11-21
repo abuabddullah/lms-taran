@@ -1,11 +1,16 @@
 # apis
+### auth
+* http://localhost:5000/api/auth/login (**post**)
+* http://localhost:5000/api/auth/register (**post**)
+### teacher
+* http://localhost:5000/api/teacher/register (**post**)
+* http://localhost:5000/api/teacher/assign-course (**post**)
+* http://localhost:5000/api/teacher/set-schedule (**post**)
+* http://localhost:5000/api/teacher/attendance (**post**)
 ### attendance
 * http://localhost:5000/api/attendance/mark (**post**)
 * http://localhost:5000/api/attendance/summary/:userId (**get**)
 * http://localhost:5000/api/attendance/fines (**get**)
-### auth
-* http://localhost:5000/api/auth/login (**post**)
-* http://localhost:5000/api/auth/register (**post**)
 ### course
 * http://localhost:5000/api/course/create (**post**)
 * http://localhost:5000/api/course/assign-teacher (**post**)
@@ -36,8 +41,3 @@
 * http://localhost:5000/api/student/enroll (**get**)
 * http://localhost:5000/api/student/:id (**get**)
 * http://localhost:5000/api/student/attendance (**get**)
-### teacher
-* http://localhost:5000/api/teacher/register (**post**)
-* http://localhost:5000/api/teacher/assign-course (**post**)
-* http://localhost:5000/api/teacher/set-schedule (**post**)
-* http://localhost:5000/api/teacher/attendance (**post**)

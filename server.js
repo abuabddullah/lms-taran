@@ -25,6 +25,7 @@ const studentRoutes = require("./routes/studentRoutes");
 const teacherRoutes = require("./routes/teacherRoutes");
 
 app.use("/api/auth", authRoutes);
+app.use("/api/teacher", teacherRoutes);
 app.use("/api/course", courseRoutes);
 app.use("/api/attendance", attendanceRoutes);
 app.use("/api/exam", examRoutes);
@@ -32,7 +33,6 @@ app.use("/api/fee", feeRoutes);
 app.use("/api/leave", leaveRoutes);
 app.use("/api/schedule", scheduleRoutes);
 app.use("/api/student", studentRoutes);
-app.use("/api/teacher", teacherRoutes);
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
